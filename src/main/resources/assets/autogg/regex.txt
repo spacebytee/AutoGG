@@ -1,0 +1,24 @@
+:hypixel
+"prefix": "/ac "
+"criteria": "^(?:[\w-]+\.)?hypixel\.(net|io)(:\d+)?$"
+"trigger": 0,^ +1st Killer - ?\[?\w*\+*\]? \w+ - \d+(?: Kills?)?$
+"trigger": 0,^ *1st (?:Place ?)?(?:-|:)? ?\[?\w*\+*\]? \w+(?: : \d+| - \d+(?: Points?)?| - \d+(?: x .)?| \(\w+ .{1,6}\) - \d+ Kills?|: \d+:\d+| - \d+ (?:Zombie )?(?:Kills?|Blocks? Destroyed)| - \[LINK\])?$
+"trigger": 0,^ +Winn(?:er #1 \(\d+ Kills\): \w+ \(\w+\)|er(?::| - )(?:Hiders|Seekers|Defenders|Attackers|PLAYERS?|MURDERERS?|Red|Blue|RED|BLU|\w+)(?: Team)?|ers?: ?\[?\w*\+*\]? \w+(?:, ?\[?\w*\+*\]? \w+)?|ing Team ?[\:-] (?:Animals|Hunters|Red|Green|Blue|Yellow|RED|BLU|Survivors|Vampires))$
+"trigger": 0,^ +Alpha Infected: \w+ \(\d+ infections?\)$
+"trigger": 0,^ +Murderer: \w+ \(\d+ Kills?\)$
+"trigger": 0,^ +You survived \d+ rounds!$
+"trigger": 0,^ +(?:UHC|SkyWars|Bridge|Sumo|Classic|OP|MegaWalls|Bow|NoDebuff|Blitz|Combo|Bow Spleef) (?:Duel|Doubles|3v3|4v4|Teams|Deathmatch|2v2v2v2|3v3v3v3)? ?- \d+:\d+$
+"trigger": 0,^ +They captured all wools!$
+"trigger": 0,^ +Game over!$
+"trigger": 0,^ +[\d\.]+k?/[\d\.]+k? \w+$
+"trigger": 0,^ +(?:Criminal|Cop)s won the game!$
+"trigger": 0,^ +\[?\w*\+*\]? \w+ - \d+ Final Kills$
+"trigger": 0,^ +Zombies - \d*:?\d+:\d+ \(Round \d+\)$
+"trigger": 0,^ +. YOUR STATISTICS .$
+"trigger": 0,^ {36}Winner(s?)$
+"trigger": 0,^ {21}Bridge CTF [a-zA-Z]+ - \d\d:\d\d$
+"trigger": 1,^MINOR EVENT! .+ in .+ ended$
+"trigger": 1,^DRAGON EGG OVER! Earned [\d,]+XP [\d,]g clicking the egg \d+ times$
+"trigger": 1,^GIANT CAKE! Event ended! Cake's gone!$
+"trigger": 1,^PIT EVENT ENDED: .+ \[INFO\]$
+"trigger": 3,^\+(?<karma>\d)+ Karma!$
