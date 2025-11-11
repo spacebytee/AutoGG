@@ -26,7 +26,7 @@ public class RegexManager {
     public void load() {
         try (InputStream stream = getClass().getClassLoader().getResourceAsStream("assets/autogg/regex.txt")) {
             if (stream == null) {
-                System.out.println("regex.txt not found in resources/assets/autogg/");
+                AutoGG.LOGGER.error("regex.txt not found in resources/assets/autogg/");
                 return;
             }
 
@@ -50,7 +50,6 @@ public class RegexManager {
                 } else if (line.startsWith("\"criteria\"")) {
                     if (currentServer != null) {
                         String criteria = line.trim().substring(13,line.length()-1);
-                        System.out.println("crt: " + criteria);
                         currentServer.ipMatch = criteria;
                     }
                 } else if (line.startsWith("\"trigger\": ")) {

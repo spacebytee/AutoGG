@@ -70,9 +70,7 @@ public class AutoGG implements ClientModInitializer {
 	public void handleChat(String s) {
 		if (mc.getCurrentServer() == null) return;
 		if (mc.getCurrentServer().ip.isEmpty()) return;
-		System.out.println(mc.getCurrentServer().ip);
 		RegexManager.ServerConfig c = RegexManager.INSTANCE.getConfigByIP(mc.getCurrentServer().ip.trim());
-		System.out.println(c == null ? "No valid server" : "hypixel");
 		if (c == null) return;
 		boolean matched = false;
 		for (RegexManager.Regex r : c.getList()) {
