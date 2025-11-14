@@ -53,7 +53,7 @@ public class AutoGG implements ClientModInitializer {
 		}
 
 	}
-	private void sendChatMessage(String s) {
+	public void sendChatMessage(String s) {
 		if (this.mc.player == null) {
 			(new Exception("poo")).printStackTrace();
 			return;

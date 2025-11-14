@@ -17,5 +17,9 @@ public class ChatComponentMixin {
 	public void mixin$addMessage(Component contents, CallbackInfo ci) {
 		String content = contents.getString().replaceAll("§.", "").stripTrailing();
 		AutoGG.INSTANCE.handleChat(content);
+
+		/*if (content.trim().equals("The game starts in 5 seconds!")) {
+			AutoGG.INSTANCE.sendChatMessage("/ac glhf");
+		}*/
 	}
 }
