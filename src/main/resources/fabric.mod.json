@@ -8,8 +8,8 @@
 		"spacebyte"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://bytespacegames.com",
+		"sources": "https://github.com/spacebytee/AutoGG"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/autogg/icon.png",
@@ -24,7 +24,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.17.1",
-		"minecraft": "1.21.x",
+		"minecraft": "26.x",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

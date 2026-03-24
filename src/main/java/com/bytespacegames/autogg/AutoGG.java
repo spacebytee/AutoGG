@@ -1,18 +1,13 @@
 package com.bytespacegames.autogg;
 
-import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
-import com.mojang.brigadier.builder.RequiredArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import net.fabricmc.api.ClientModInitializer;
-
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommands;
 import net.minecraft.client.Minecraft;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Objects;
 
 public class AutoGG implements ClientModInitializer {
 	public static final String MOD_ID = "autogg";
@@ -30,7 +25,7 @@ public class AutoGG implements ClientModInitializer {
 		mc = Minecraft.getInstance();
 
 		ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> {
-			LiteralArgumentBuilder cmd = ClientCommandManager.literal("autogg")
+			LiteralArgumentBuilder cmd = ClientCommands.literal("autogg")
 					.executes(this::openGui);
 			dispatcher.register(cmd);
 		});
