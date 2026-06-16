@@ -42,9 +42,9 @@ public class AutoGG implements ClientModInitializer {
 			RegexManager.ServerConfig c = RegexManager.INSTANCE.getConfigByIP(mc.getCurrentServer().ip.trim());
 			sendChatMessage(c.getPrefix() + Settings.INSTANCE.message);
 		}
-		if (shouldOpenGui && mc.level != null && mc.screen == null) {
+		if (shouldOpenGui && mc.level != null && mc.gui.screen() == null) {
 			shouldOpenGui = false;
-			mc.execute(() -> mc.setScreen(new AutoGGScreen()));
+			mc.execute(() -> mc.gui.setScreen(new AutoGGScreen()));
 		}
 
 	}
